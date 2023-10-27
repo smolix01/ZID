@@ -1,21 +1,5 @@
 #!/bin/bash
 
-sudo apt-get purge `dpkg -l | grep php | awk '{print $2}' | tr "\n" " "`
-
-sudo add-apt-repository ppa:ondrej/php
-
-sudo apt-get install software-properties-common
-
-sudo apt-get install php5.6
-
-sudo apt-get install apache2
-
-sudo service apache2 restart
-
-sudo apt-get install postfix
-
-echo "sender_canonical_maps = hash:/etc/postfix/ca#!/bin/bash
-
 # Ensure the script is executed with administrator privileges directly
 if [[ $EUID -ne 0 ]]; then
    echo "This script must be run with administrator (sudo) privileges." 
@@ -77,22 +61,3 @@ apt-get install -y unzip
 
 # Successfully finished the script
 echo "Environment configuration completed successfully!"
-nonical" | sudo tee -a /etc/postfix/main.cf
-echo "mime_header_checks = regexp:/etc/postfix/header_checks" | sudo tee -a /etc/postfix/main.cf
-echo "header_checks = regexp:/etc/postfix/header_checks" | sudo tee -a /etc/postfix/main.cf
-
-sudo cat > /etc/postfix/header_checks << EOF
-/^Received:.*\(Postfix/ IGNORE
-EOF
-echo "Header Checks Done !!!"
-
-sudo cat > /etc/postfix/canonical << EOF
-www-data  noreply
-EOF
-echo "Canonical Done !!!"
-
-sudo postmap /etc/postfix/canonical
-
-cd /var/www/html
-
-sudo apt-get install unzip
