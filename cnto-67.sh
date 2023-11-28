@@ -14,7 +14,7 @@ echo "Hostname has been set to: $new_domain_name"
 # Rest of your existing script starts here
 
 # Remove existing PHP packages (if any)
-sudo yum remove php*
+sudo yum install php* 
 
 # Add the Webtatic repository for PHP 5.6 (CentOS 6)
 sudo rpm -Uvh https://mirror.webtatic.com/yum/el6/latest.rpm
