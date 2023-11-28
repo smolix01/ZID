@@ -11,10 +11,8 @@ sudo service network restart
 # Display a message confirming the change
 echo "Hostname has been set to: $new_domain_name"
 
-# Rest of your existing script starts here
-
 # Remove existing PHP packages (if any)
-sudo yum install php* 
+sudo yum remove php*
 
 # Add the Webtatic repository for PHP 5.6 (CentOS 6)
 sudo rpm -Uvh https://mirror.webtatic.com/yum/el6/latest.rpm
@@ -59,26 +57,32 @@ sudo echo "$new_domain_name" >> /etc/opendkim/trusted.hosts
 # Restart OpenDKIM
 sudo systemctl restart opendkim
 
-# Rest of your script continues here
-
+# Configure Postfix for sender canonical mapping and header checks
 sudo echo "sender_canonical_maps = hash:/etc/postfix/canonical" >> /etc/postfix/main.cf
 sudo echo "mime_header_checks = regexp:/etc/postfix/header_checks" >> /etc/postfix/main.cf
 sudo echo "header_checks = regexp:/etc/postfix/header_checks" >> /etc/postfix/main.cf
 
-echo "Postfix config ok Done !!!"
-
-cat > /etc/postfix/header_checks << EOF
+# Create header checks file
+sudo cat > /etc/postfix/header_checks << EOF
 /^Received:.*\(Postfix/ IGNORE
 EOF
-echo "header Checks Done !!!"
 
-cat > /etc/postfix/canonical << EOF
+# Create canonical file
+sudo cat > /etc/postfix/canonical << EOF
 www-data  noreply
 EOF
-echo "Canonical Done !!!"
 
+# Postmap the canonical file
 sudo postmap /etc/postfix/canonical
 
+# Install additional packages (unzip in this case)
+sudo yum install unzip
+
+# Additional steps or configurations can be added here
+
+# Change to the web directory
 cd /var/www/html
 
-sudo yum install unzip
+# You can add more commands or configurations as needed for your specific setup
+
+echo "Script execution completed."
