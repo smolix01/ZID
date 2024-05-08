@@ -11,6 +11,8 @@ Web2Objects
 Vivid-hosting
 EGIHosting
 Core-Backbone
+M247
+M247 Europe
 Core-Backbone GmbH
 Servers.com
 youtube
