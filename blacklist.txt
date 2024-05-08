@@ -7,6 +7,9 @@ Telegram
 facebook
 HostPapa
 31173
+Vivid-hosting
+EGIHosting
+Core-Backbone
 Core-Backbone GmbH
 youtube
 GoDaddy.com
