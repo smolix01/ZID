@@ -6,6 +6,7 @@ google.com
 Telegram
 facebook
 HostPapa
+Core-Backbone GmbH
 youtube
 GoDaddy.com
 DigitalOcean
