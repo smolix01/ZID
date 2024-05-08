@@ -1,34 +1,34 @@
 AVAST
 Oracle 
-Amazon.com	
-google.com	
-GoDaddy.com	
-DigitalOcean	
-OVH	
+Amazon.com
+google.com
+GoDaddy.com
+DigitalOcean
+OVH
 ANTISPAMEUROPE
-Microsoft	
+Microsoft
 HostRoyale 
-Palo Alto Networks	
+Palo Alto Networks
 NAVER Cloud Corp
 Google
 Aggros Operations Ltd
 Alibaba
 Apple
 BayCity
-BELNET	
-Bitdefender	
+BELNET
+Bitdefender
 Boston
-BtHoster	
+BtHoster
 CenturyLink
-Cloudflare	
-Lantek LLC	
-M247 Europe SRL	
-OVH SAS	
-Oy Crea Nova Hosting Solution Ltd	
-PacketHub S.A.	
-PenTeleData	
-Primetel	
-Proofpoint	
+Cloudflare
+Lantek LLC
+M247 Europe SRL
+OVH SAS
+Oy Crea Nova Hosting Solution Ltd
+PacketHub S.A.
+PenTeleData
+Primetel
+Proofpoint
 Aceville
 Hetzner
 Smart Technology LLC
