@@ -1,6 +1,7 @@
 AVAST
 Oracle 
 Amazon.com
+Amazon
 google.com
 Telegram
 facebook
