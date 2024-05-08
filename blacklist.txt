@@ -6,6 +6,7 @@ google.com
 Telegram
 facebook
 HostPapa
+Web2Objects
 31173
 Vivid-hosting
 EGIHosting
