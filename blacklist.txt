@@ -2,6 +2,9 @@ AVAST
 Oracle 
 Amazon.com
 google.com
+Telegram
+facebook
+youtube
 GoDaddy.com
 DigitalOcean
 OVH
