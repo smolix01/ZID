@@ -10,7 +10,7 @@ Microsoft
 HostRoyale 
 Palo Alto Networks	
 NAVER Cloud Corp
-Google	
+Google
 Aggros Operations Ltd
 Alibaba
 Apple
