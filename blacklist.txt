@@ -5,6 +5,7 @@ Amazon
 google.com
 Telegram
 facebook
+QuickPacket, LLC
 HostPapa
 Rackforest Zrt.
 Web2Objects
